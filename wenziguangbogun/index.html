@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./liMarquee.css">
+    <title>Document</title>
+    <script src="jquery-1.9.1.min.js"></script>
+    <!--<script src="./js.js"></script>-->
+    <script src="./jsmin.js"></script>
+</head>
+<body>
+<div style="height: 25px;width:300px;background-color: #f6f6f6;position: absolute;top: 200px">
+    <div class="jq22">
+    </div>
+    <div style="width: 20px;height: 20px;position: absolute;top: 3px;background-color: #f6f6f6;">
+        <img style="width: 25px;height: 25px" src="./01.png">
+    </div>
+</div>
+    <button>按钮</button>
+</body>
+<script>
+    $(function(){
+
+    });
+    $("button").on("click",function () {
+        $('.jq22').html("你好在没地你啦空间的flask的飞机阿拉山口低方m");
+        $('.jq22').liMarquee();
+        setTimeout(function () {
+            $('.jq22').html("")
+        },15000)
+    })
+</script>
+</html>
